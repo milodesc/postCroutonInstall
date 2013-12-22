@@ -26,9 +26,13 @@ sudo apt-get update
 sudo apt-get install sublime-text
 
 #lamp server
-sudo apt-get install lamp-server^
+sudo apt-get install apache2
+sudo apt-get install php5 libapache2-mod-php5
+sudo apt-get install mysql-server mysql-client 
+sudo /user/sbin/mysqld
 sudo apt-get install phpmyadmin
-sudo service apache2 restart
+sudo bash -c "echo -e '\n\nInclude /etc/phpmyadmin/apache.conf' >> /etc/apache2/apache2.conf"
+sudo /etc/init.d/apache2 restart
 
 #git
 sudo apt-get install git-core
