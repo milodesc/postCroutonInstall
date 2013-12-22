@@ -33,6 +33,8 @@ sudo /usr/sbin/mysqld &
 sudo apt-get install phpmyadmin
 sudo bash -c "echo -e '\n\nInclude /etc/phpmyadmin/apache.conf' >> /etc/apache2/apache2.conf"
 sudo /etc/init.d/apache2 restart
+sudo mv /etc/rc.local /etc/rc.local.bk
+sudo cp ./rc.local /etc/rc.local
 
 #git
 sudo apt-get install git-core
