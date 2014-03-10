@@ -1,7 +1,7 @@
 Description
 ===========
 
-A script to run after installing crouton (xubuntu 12.04) on an Acer C710 chromebook. The script mainly downloads and installs some popular web development tools:
+A bash script to run after installing crouton (xubuntu 12.04) on an Acer C710 chromebook. The script mainly downloads and installs some popular web development tools:
 - firefox and chromium (crouton only comes with the unusable NetSurf browser out of the box)
 - LAMP server
 - git
